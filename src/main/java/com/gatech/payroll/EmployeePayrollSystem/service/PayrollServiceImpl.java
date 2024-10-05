@@ -30,7 +30,7 @@ public class PayrollServiceImpl implements PayrollService {
     }
 
     @Override
-    public List<Payroll> getPayrollsByEmployeeId(Long employeeId) {
+    public List<Payroll> getPayrollByEmployeeId(Long employeeId) {
         if (!employeeRepository.existsById(employeeId)) {
             throw new NoSuchElementException("Employee id not found for getting payrolls.");
         }

@@ -19,7 +19,7 @@ public class Employee {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column(name="first_naame", nullable = false)
+    @Column(name="first_name", nullable = false)
     private String firstName;
 
     @Column(name="last_name", nullable = false)

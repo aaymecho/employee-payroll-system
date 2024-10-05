@@ -9,7 +9,7 @@ public interface PayrollService {
 
     Payroll getPayrollByEmployeeIdAndPayPeriod(Long employeeId, String payPeriod);
 
-    List<Payroll> getPayrollsByEmployeeId(Long employeeId);
+    List<Payroll> getPayrollByEmployeeId(Long employeeId);
 
     Payroll addPayroll(long employeeId, Payroll payroll);
 

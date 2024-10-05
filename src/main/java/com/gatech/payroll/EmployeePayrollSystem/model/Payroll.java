@@ -1,5 +1,6 @@
 package com.gatech.payroll.EmployeePayrollSystem.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -24,6 +25,7 @@ public class Payroll {
     @Column(name = "pay_period", unique = true)
     private String payPeriod;
 
+    @JsonIgnore
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "employee_id", referencedColumnName = "id")
     private Employee employee;
