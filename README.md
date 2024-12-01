@@ -7,14 +7,6 @@ Employee Payroll System is a Spring Boot application designed to manage payroll 
 ![Alt text](https://i.imgur.com/foAdM5g.png)
 
 
-## Features
-
-TBA
-
-## Requirements
-
-TBA
-
 ## Setup and Installation
 
 1. **Clone the repository**:
